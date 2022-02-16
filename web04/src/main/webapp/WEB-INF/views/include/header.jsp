@@ -14,6 +14,7 @@
             <ul class="utilWrap">
        		<c:if test="${member != null}">
        		<li><a href="member/logout">로그아웃</a></li>
+       		  <li class="pc"><a href="member/memberUpdateView">마이페이지</a></li>
        		<li><a href="member/memberDeleteView">회원탈퇴</a></li>
        		</c:if>
 				<c:if test="${member == null}">
@@ -21,7 +22,7 @@
                 <li><a href="member/register">회원가입</a></li>   
         		</c:if>
                 
-                <li class="pc"><a href="">마이페이지</a></li>
+                <li class="pc"><a href=></a></li>
                 
                 <li><a href="javascript:void(0);" id="vodClick" onclick="listSH();"><span id="vodimg">LANGUAGE</span></a> 
                     <div id="vodList" class="nation" style="display: none;">

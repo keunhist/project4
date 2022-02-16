@@ -25,7 +25,7 @@
     <link rel="shortcut icon" href="${path}/include/image/favicon.ico" comment="웹브라우저왼쪽상단의 아이콘" />
     <link rel="icon" href="" comment="즐겨찾기했을때의 웹사이트 대표 아이콘" />
     <!-- 필요한 라이브러리 -->
-    <script src="http://code.jquery.com/jquery-latest.js"></script>
+   
 
     <!-- 구글 애널리틱스 연결 : 방문자 통계 및 로그분석 -->
     <!-- Global site tag (gtag.js) - Google Analytics -->

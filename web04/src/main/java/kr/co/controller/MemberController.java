@@ -5,7 +5,6 @@ import javax.servlet.http.HttpSession;
 
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
-import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.security.crypto.bcrypt.BCryptPasswordEncoder;
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.RequestMapping;
@@ -115,15 +114,15 @@ public class MemberController {
 	@RequestMapping(value="/memberUpdate", method = RequestMethod.POST)
 	public String registerUpdate(MemberVO vo, HttpSession session) throws Exception{
 		
-/*		MemberVO login = service.login(vo);
+		MemberVO login = service.login(vo);
 		
-		boolean pwdMatch = pwdEncoder.matches(vo.getUserPass(), login.getUserPass());
+		boolean pwdMatch = pwdEncoder.matches(vo.getUserpass(), login.getUserpass());
 		if(pwdMatch) {
 			service.memberUpdate(vo);
 			session.invalidate();
 		}else {
 			return "member/memberUpdateView";
-		}*/
+		}
 		service.memberUpdate(vo);
 		session.invalidate();
 		return "redirect:/";

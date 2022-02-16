@@ -3,6 +3,7 @@
 <%@ taglib prefix="fmt" uri="http://java.sun.com/jsp/jstl/fmt"%>
 <html>
 <head>
+<%@ include file="../include/head.jsp" %>
 	<!-- 합쳐지고 최소화된 최신 CSS -->
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/css/bootstrap.min.css">
 	<!-- 부가적인 테마 -->
@@ -15,10 +16,9 @@
 <title>로그인 페이지</title>
 </head>
 <body>
+<%@include file="../include/header.jsp" %>
 <div class="container">
-	<header>
-		<h1></h1>
-	</header>
+
 	<hr />
 	<div>
 		<%@include file="nav.jsp" %>
